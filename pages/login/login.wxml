@@ -1,0 +1,43 @@
+<!--pages/login/login.wxml-->
+<view class="body">
+    <!--头部-->
+    <view class="login_head">
+        <image class="head_logo" src="https://www.yitingting.top/h5edu/smart/images/logo.png" />
+        <view class="head_title">
+            欢迎登录Smart账号
+        </view>
+    </view>
+    <view class="userinfo">
+        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+        <block wx:else>
+            <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </block>     
+    </view>
+    <!-- 登录 -->
+    <view class="login_content">
+        <view class="content_phone content_every">
+            <image class="content_every_img" src="https://www.yitingting.top/h5edu/smart/images/login/phone.png" />
+            <input bindinput='bindPhoneinput' type="text" placeholder="" auto-focus  placeholder="请输入"/>
+        </view>
+        <view class="content_password content_every">
+            <image class="content_every_img" src="https://www.yitingting.top/h5edu/smart/images/login/password.png" />
+            <input bindinput='bindPasswordinput' type="password" placeholder="" auto-focus password placeholder="请输入"/>
+        </view>
+        <text style="width:100%;text-align: center;display:block;color:red;margin-top:10rpx;">{{WarningText}}</text>
+        <view class="content_btn" bindtap="login">
+            登录
+        </view>
+    </view>
+
+    <!-- 去注册 -->
+    <view class="login_change">
+        <text class="change_sign" bindtap="gotoLoginup">去绑定</text>
+        <text> | </text>
+        <text class="change_find">找回密码</text>
+    </view>
+
+    <view class="login_visit" bindtap="gotoYouke">
+        <text>游客访问</text>
+    </view>
+</view>

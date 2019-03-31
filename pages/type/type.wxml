@@ -1,0 +1,9 @@
+<!--pages/type/type.wxml-->
+<view class="body">
+  <block wx:for="{{typeData}}">
+    <view class="type_every">
+      <image class="type_every_img" src="{{item.imgurl}}"></image>
+      <text class="type_every_title">{{item.title}}</text>
+    </view>
+  </block>
+</view>

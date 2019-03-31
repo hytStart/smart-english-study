@@ -1,0 +1,9 @@
+<!--pages/compositionList/compositionList.wxml-->
+<view class="body">
+  <view class='body_title'>英语四级写作范文</view>
+  <block wx:for="{{list}}">
+    <view class='every' data-id='{{item.composition_id}}' bindtap='jump'>
+      <text class='every_title'>{{index+1}}. {{item.composition_title}}</text>
+    </view>
+  </block>
+</view>

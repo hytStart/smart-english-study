@@ -1,0 +1,14 @@
+<!--pages/translate/translate.wxml-->
+<view class="body">
+  <view>
+    原文：
+  </view>
+  <input class="body_origin" bindinput='change_origin' placeholder='Smart翻译'></input>
+  <button bindtap="translate" class="weui-btn" type="primary" plain="true">翻译</button>
+  <view class="result">
+    结果：
+  </view>
+  <text>
+    {{result_info}}
+  </text>
+</view>

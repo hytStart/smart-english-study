@@ -1,0 +1,30 @@
+/* pages/addQuestion/addQuestion.wxss */
+.body{
+  width: 700rpx;
+  margin: 0 auto;
+}
+.question_guide{
+  text-align: center;
+  margin: 20rpx 0;
+}
+.question_title{
+  margin: 20rpx 0;
+  height: 80rpx;
+  background: #f5f5f5;
+  text-indent: 10rpx;
+  border-radius: 10rpx;
+}
+.question_content{
+  height: 300rpx;
+  width: 700rpx;
+  border-radius: 15rpx;
+  background: #f5f5f5;
+  margin: 20rpx 0;
+  text-indent: 10rpx;
+  border-radius: 10rpx;
+}
+.question_btn{
+  margin-top: 30rpx;
+  background:#395DB5;
+  color: #fff;
+}

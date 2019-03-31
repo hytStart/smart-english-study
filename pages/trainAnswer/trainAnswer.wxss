@@ -1,0 +1,11 @@
+/* pages/train/trainAnswer.wxss */
+.mark{
+    color: #395DB5;
+}
+.line{
+    width: 100%;
+    height: 4rpx;
+    background-color: #395DB5;
+    margin-top:6rpx;
+    margin-bottom:6rpx;
+}

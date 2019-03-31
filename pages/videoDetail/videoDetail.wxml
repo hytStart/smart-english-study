@@ -1,0 +1,25 @@
+<!--pages/videoDetail.wxml-->
+<view class="body">
+    <video class="video_play" src="{{videlData.link}}"></video>
+    
+    <view class="nav bc_white">
+        <view class="{{selected?'red':'default'}}" bindtap="selected">简介</view>
+        <view class="{{selected1?'red':'default'}}" bindtap="selected1">相关知识</view>
+    </view>
+
+    <view class="{{selected?'show':'hidden'}}">
+        <text class="video_title">{{videoData.title}}</text>
+        <view class="video_introduction">{{videoData.introduction}}</view>
+    </view>
+
+    <view class="{{selected1?'show':'hidden'}}">
+        <text class="video_technology">
+           ^本文我们要学习的是:
+【when it comes to ... 】as for something; speaking about something
+当涉及到； 当谈到
+        <view></view>
+^例:
+Stefan:Damon promised he'd help me stay off the edge,but, uh, he and I, we're not in a very good place right now,not when it comes to her.
+        </text>
+    </view>
+</view>

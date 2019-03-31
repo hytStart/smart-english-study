@@ -1,0 +1,44 @@
+/* pages/myWords.wxss */
+.body{
+  width: 720rpx;
+  margin: 0 auto;
+}
+.words_alltype{
+  color: #395DB5;
+  width: 100%;
+  text-align: center;
+  font-size: 40rpx;
+}
+.words_every{
+  width: 100%;
+  min-height: 180rpx;
+  padding-bottom:5px;
+  position:relative;
+  box-shadow: 0 0 6rpx #395DB5;
+  margin-top: 16rpx;
+  text-indent: 10rpx;
+}
+.words_every_wenglish{
+  display: block;
+}
+.words_every_wtype{
+  font-size: 28rpx;
+  margin-left: 10rpx;
+}
+.words_every_wchinese{
+  display: inline-block;
+  font-size: 28rpx;
+  margin-left: 16rpx;
+}
+.words_every_wlx{
+  display: block;
+  font-size: 28rpx;
+  margin-top: 8rpx;
+}
+.words_every_collection{
+  width:60rpx;
+  height:60rpx;
+  position:absolute;
+  right:24rpx;
+  top:24rpx;
+}

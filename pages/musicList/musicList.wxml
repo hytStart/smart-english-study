@@ -1,0 +1,9 @@
+<!--pages/musicList/musicList.wxml-->
+<view class="body">
+    <block wx:for="{{listData}}">
+          <view class="body_every" data-musicname="{{item}}" bindtap="jump">
+            <image class="every_img" src="https://www.yitingting.top/h5edu/smart/images/type/{{imgSrc[index] ? imgSrc[index] : 1}}.jpg"/>
+            <text class="every_title">{{item}}</text>
+          </view>
+    </block>
+</view>

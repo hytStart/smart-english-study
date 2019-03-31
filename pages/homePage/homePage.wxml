@@ -1,0 +1,50 @@
+<!-- banner轮播 -->
+<view class="banner">
+  <swiper indicator-dots="true"
+    autoplay interval="2000" duration="{{500}}">
+    <block wx:for="{{bannerData}}" wx:key="bannerData.current">
+      <swiper-item>
+        <image src="{{item.src}}" class="slide-image" bindtap='link' data-link="{{item.link}}"/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- 小分类指引 -->
+<view class="middleType">
+  <block wx:for="{{middleType}}"> 
+    <!-- <block wx:if> -->
+    <view class="type_every" bindtap="jumpTotype" data-link="{{item.pageLink}}">
+      <image class="type_every_img" src="{{item.imgsrc}}"></image>
+       <text class="type_every_text">{{item.title}}</text> 
+    </view>
+  </block>
+</view>
+
+<!-- 背景  -->
+<view class="backBlock1"></view>
+
+<!-- 精品推荐 -->
+<view class="boutique">
+  <view class="boutique_con">
+    <image class="boutique_img" src="https://www.yitingting.top/h5edu/smart/images/bannerImg/boutique_img.png"></image>
+    <text class="boutique_title">精品推荐</text>
+  </view>
+  <view class="boutique_bot">
+    <block wx:for="{{boutiqueData}}">
+      <view class="boutique_every" bindtap='jumpBoutique' data-pageType='{{item.pageType}}'>
+         <image class="boutique_every_img" src="{{item.imgsrc}}"></image>  
+        <text class="boutique_every_text">{{item.title}}</text>
+      </view>
+    </block>
+  </view>
+</view>
+
+<!-- 背景  -->
+<view class="backBlock1"></view>
+
+<!-- 训练营 -->
+<view class="trainCamp" bindtap="gotoTrain">
+  <text>训练营</text>
+  <image src="https://www.yitingting.top/h5edu/smart/images/bannerImg/trainBanner.jpg" />
+</view>

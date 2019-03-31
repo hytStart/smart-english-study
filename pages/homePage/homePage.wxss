@@ -1,0 +1,93 @@
+/* pages/homePage/homePage.wxss */
+.banner{
+  width: 100%;
+  height: 300rpx;
+}
+.slide-image{
+  width: 100%;
+  height: 100%;
+}
+
+.middleType{
+  margin-top: 30rpx; 
+  width: 100%;
+  height: 140rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.type_every{
+  width: 170rpx;
+  height: 140rpx;
+  text-align: center;
+  
+}
+.type_every_img{
+  width: 90rpx;
+  height: 90rpx;
+  display: inline-flex;
+}
+.type_every_text{
+  display: block;
+  font-size: 24rpx;
+}
+
+.backBlock1{
+  width: 100%;
+  height: 20rpx;
+  background-color: #F5F5F5;
+}
+
+.boutique{
+  width: 100%;
+  height: 260rpx; 
+}
+.boutique_con{
+  margin-top: 6rpx;
+}
+.boutique_img{
+  width: 48rpx;
+  height: 48rpx;
+  vertical-align: top;
+}
+.boutique_title{
+  font-size: 34rpx;
+  color: #395DB5;
+}
+
+.boutique_bot{
+  width: 100%;
+  height: 180rpx;
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: center;
+}
+.boutique_every{
+  width: 25%;
+  height: 100%;
+  text-align: center;
+}
+.boutique_every_img{
+  width: 70%;
+  height: 70%;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 80%;
+}
+.boutique_every_text{
+  font-size:30rpx;
+} 
+.trainCamp{
+  width:720rpx;
+  margin: 0 auto;
+}              
+.trainCamp text{
+  display:block;
+  margin-top:10rpx;
+  padding-bottom:10rpx;
+  color:#395DB5;
+}                  
+.trainCamp image{
+  width:100%;
+  height:320rpx;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                        

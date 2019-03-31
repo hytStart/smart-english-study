@@ -1,0 +1,9 @@
+<!--pages/audioList/audioList.wxml-->
+<view class="body">
+    <block wx:for="{{audioData}}">
+        <view class="every" data-listid="{{index}}" bindtap="jumpDetail">
+            <image class="bacimg" src="https://www.yitingting.top/h5edu/smart/images/type/{{imgSrc[index] ? imgSrc[index] : 1}}.jpg" />
+            <text class="title">{{item.title}}</text>
+        </view>
+    </block>
+</view>

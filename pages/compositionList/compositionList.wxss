@@ -1,0 +1,16 @@
+/* pages/compositionList/compositionList.wxss */
+.body{
+  width: 720rpx;
+  margin: 0 auto;
+}
+.body_title{
+  width: 100%;
+  text-align: center;
+  color: #395DB5;
+}
+.every{
+  width: 100%;
+  min-height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1px solid #395DB5;
+}

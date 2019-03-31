@@ -1,0 +1,15 @@
+/* pages/translate/translate.wxss */
+.body{
+  width: 720rpx;
+  margin: 0 auto;
+}
+.body_origin{
+  width: 100%;
+  height: 400rpx;
+  border: 1px solid #395DB5;
+  margin-top: 20rpx;
+  text-indent: 20rpx;
+}
+.result{
+  margin-top: 20rpx;
+}

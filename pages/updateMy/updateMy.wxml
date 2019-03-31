@@ -1,0 +1,14 @@
+<!--pages/updateMy/updateMy.wxml-->
+<view class="body">
+    <text class="title">修改个人信息</text>
+    <image src="{{imgurl}}" class="myimg"/>
+        <text>用户名：</text>
+    <view class="myname_con">
+        <input class="myname" type="" placeholder="{{placeName}}" bindinput="nameChange" auto-focus />
+    </view>
+        <text>密码：</text>
+    <view class="mypassword_con">
+        <input  class="mypassword" type="" placeholder="{{placePassword}}" bindinput="passwordChange" auto-focus password />
+    </view>
+    <button bindtap="sumitUpdate" class="weui-btn" type="primary" plain="true">提交修改</button>
+</view>

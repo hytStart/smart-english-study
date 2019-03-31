@@ -1,0 +1,28 @@
+<!--pages/words/words.wxml-->
+<view class="body">
+  <view class="words_alltype">{{wordsTitle}}</view>
+  <block wx:for="{{wordslist}}"> 
+    <view class="words_every">
+       <text  class="words_every_wenglish">{{item.Word}}</text>
+       <text class="words_every_wchinese">{{item.meaning}}</text>
+       <view >
+        <audio class='dancifayin' src="http://media.shanbay.com/audio/us/{{item.Word}}.mp3" controls name='{{item.Word}}' author='Smart'></audio>
+       </view>
+       <text class="words_every_wlx">
+          <text  wx:if="{{item.lx}}">例句：</text>
+          {{item.lx}}
+       </text>
+       <image wx:if="{{item.flag === 'exist'}}" bindtap="collectWords" data-wid="{{item.ID}}" data-flag="{{item.flag}}" class="words_every_collection" src="https://www.yitingting.top/h5edu/smart/images/word_collect/collect_yes.png"></image> 
+      <image wx:else bindtap="collectWords" data-wid="{{item.ID}}" data-flag="{{item.flag}}" class="words_every_collection" src="https://www.yitingting.top/h5edu/smart/images/word_collect/collect_no.png"></image> 
+    </view>
+  </block>
+
+  <!-- 翻页 -->
+  <view class="paganition">
+    <image class="pageBefore" src="https://www.yitingting.top/h5edu/smart/images/pageBefore.png" bindtap="before"/>
+    <image class="pageAfter" src="https://www.yitingting.top/h5edu/smart/images/pageAfter.png" bindtap="after"/>
+    <view class="count">
+      第{{pageNo+1}}页
+    </view>
+  </view>
+</view>

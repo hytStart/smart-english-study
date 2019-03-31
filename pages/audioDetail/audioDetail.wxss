@@ -1,0 +1,63 @@
+/* pages/audioDetail.wxss */
+.body{
+    width:740rpx;
+    margin:0 auto;
+}
+.radio{
+    width: 100%;
+    height: 140rpx;
+    background-color: #fff; 
+    position: fixed;
+    z-index: 999;
+}
+.body_audio{
+    position:fixed;
+    top:0;
+}
+.body_audio_replace{
+    height:140rpx;
+}
+.train_every_abcd{
+    margin-left:10rpx;
+    margin-top:20rpx;
+    display:block;
+}
+.every_answer{
+    margin-left:10rpx;
+}
+.article_title{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.line{
+    width: 100%;
+    background-color: #395DB5;
+    height: 2rpx;
+}
+.audio_answer{
+    position:fixed;
+    bottom:0rpx;
+    background-color: #395DB5;
+    width:100%;
+    border-radius:10rpx;
+    color:#fff;
+    height:20%;
+    word-break: break-all;
+    overflow-y: scroll;
+}
+.audio_shangla{
+  position: fixed;
+  bottom: 10rpx;
+  right: 10rpx;
+  width: 100rpx;
+  height: 100rpx;
+  z-index: 999;
+  background-color: #fff;
+  border-radius: 20rpx;
+}
+.white_bottom{
+    width: 100%;
+    background-color:#395DB5;
+    height: 120rpx;
+}

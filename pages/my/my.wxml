@@ -1,0 +1,22 @@
+
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <!-- <text class="userinfo-nickname">{{userInfo.nickName}}</text> -->
+    </block>
+    <image bindtap="gotoUpdate" class="userinfo-setting" src='https://www.yitingting.top/h5edu/smart/images/my/setting.png'></image>
+  </view>
+
+  <view class="personal">
+    <block wx:for="{{myData}}">
+      <view class="personal_every" data-jumpdata="{{item.jumpFlag}}" bindtap="jump">
+        <image class="personal_every_logo" src='{{item.logo}}'></image>
+        <text class="personal_every_title">{{item.title}}</text>
+        <image class="personal_every_more" src='{{item.more}}'></image> 
+      </view>
+    </block>
+  </view>
+
+</view>

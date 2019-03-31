@@ -1,0 +1,19 @@
+<!--pages/lizhiwenzhang/lizhiwenzhang.wxml-->
+<view class="body">
+    <view class="lizhi_name">
+        励志英语文章精选
+    </view>
+    <view class="lizhi_every">
+        <image class="every_banner" src="https://www.yitingting.top/h5edu/smart/images/lizhiwenzhang/oneLife2.jpg" />
+        <text class="every_title">You Have Only One Life</text>
+        <image class="every_like" src="https://www.yitingting.top/h5edu/smart/images/lizhiwenzhang/like.png" />
+        <text class="every_count">13</text>
+    </view>
+
+    <view class="lizhi_every">
+        <image class="every_banner" src="https://www.yitingting.top/h5edu/smart/images/lizhiwenzhang/zhengnengliang.jpg" />
+        <text class="every_title">Energy and persistence conquer all things.</text>
+        <image class="every_like" src="https://www.yitingting.top/h5edu/smart/images/lizhiwenzhang/like.png" />
+        <text class="every_count">25</text>
+    </view>
+</view>

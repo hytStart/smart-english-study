@@ -1,0 +1,24 @@
+<!--pages/composition/composition.wxml-->
+<view class="body">
+  <block wx:for="{{pageComposition}}">
+      <view class='title page'>题目：<text> {{item.composition_title}}</text></view>
+      <view class='directions page'>
+        Directions:
+        <text> 
+          {{item.composition_Directions}}
+        </text>
+      </view>
+      <view class='article page'>
+        范文：
+        <text>
+          {{item.composition_article}}
+        </text>
+      </view>
+      <view class='example page'>
+        高分例句解析：
+        <text>
+          {{item.composition_good}}
+        </text>
+      </view>
+  </block>
+</view>

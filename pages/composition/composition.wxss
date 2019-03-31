@@ -1,0 +1,13 @@
+/* pages/composition/composition.wxss */
+.body{
+  width: 730rpx;
+  margin: 0 auto;
+}
+.page{
+  color: #395DB5;
+  font-size: 40rpx;
+}
+.page text{
+  color: #000;
+  font-size: 32rpx;
+}

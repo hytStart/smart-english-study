@@ -1,0 +1,18 @@
+<view class="body">
+    <view>
+        您以下题目存在问题：
+    </view>
+    <block wx:for="{{wrongNum}}">
+        <view>
+            <text class="mark">题号：</text>{{item.num}}
+        </view>
+        <view>
+        <text class="mark">您的答案为：</text>{{item.wrongans}}
+        <text class="mark">正确答案为：</text>{{item.rightans}}
+        <view>
+            <text class="mark">以下为解释：</text>{{item.explain}}
+        </view>
+        </view>
+        <view class="line"></view>
+    </block>
+</view>

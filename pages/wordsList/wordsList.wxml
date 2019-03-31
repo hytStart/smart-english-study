@@ -1,0 +1,11 @@
+<!--pages/wordsList/wordsList.wxml-->
+<view class="body">
+    <view class="title">Let's recite the words</view>
+    <view class="neirong">    
+        <block wx:for="{{wordslistData}}">
+            <view class="content" data-wordsindex="{{index}}" bindtap="gotoWords">
+                {{item}}
+            </view>
+        </block>
+    </view>
+</view>

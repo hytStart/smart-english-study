@@ -1,0 +1,27 @@
+/* pages/wordsList/wordsList.wxss */
+.body{
+    width: 100%;
+}
+.title{
+    width: 100%;
+    text-align: center;
+    color: #395DB5;
+}
+.neirong{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+.content{
+    width: 46%;
+    height: 100rpx;
+    background-color: #395DB5;
+    color: #fff;
+    margin-left: 10rpx;
+    margin-right: 10rpx;
+    margin-top: 20rpx;
+    text-align: center;
+    line-height: 100rpx;
+    border-radius: 20rpx;
+}

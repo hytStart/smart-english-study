@@ -1,0 +1,12 @@
+<!--pages/videoList/videlList.wxml-->
+<view class="body">
+    <view class="body_allTitle">影视英语</view>
+    <view class="body_content">
+            <block wx:for="{{videlData}}">
+                <view class="body_every" data-vid="{{}}" bindtap='{{gotoDetail}}'>
+                    <image class="every_img" src='https://www.yitingting.top/h5edu/smart/images/type/{{imgSrc[index] ? imgSrc[index] : 1}}.jpg'></image>
+                    <text class="every_title">我是title</text>
+                </view>
+            </block>
+    </view>
+</view>

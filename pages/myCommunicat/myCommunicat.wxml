@@ -1,0 +1,14 @@
+<!--pages/myCommunicat/myCommunicat.wxml-->
+<view class="body">
+    <view class="hyt_title">我的帖子</view>
+    <block wx-else   wx:for="{{myCommunicatData}}">
+        <view class="talk_item" bindtap="goQuestionCon" data-qid="{{item.qid}}">
+          <image class="talk_item_headimg" src="{{item.uimgurl}}"></image>
+          <text class="talk_item_username">{{item.uname}}</text>
+          <text class="talk_item_title">题目：{{item.qtitle}}</text>
+          <text class="talk_item_content">{{item.qcontent}}</text>
+          <text class="talk_item_answer">回复：2</text>
+        </view>
+    </block>
+        <view wx:if="{{!myCommunicatData}}" style='margin-top:60rpx;margin-left:30rpx'>暂无</view>
+</view>

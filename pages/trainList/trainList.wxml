@@ -1,0 +1,10 @@
+<!--pages/trainList/trainList.wxml-->
+<view class="body">
+    <text class="read_title">阅读练习</text>
+    <block wx:for="{{trainData}}">
+        <view class="every" data-listid="{{index}}" bindtap="jumpDetail">
+            <image class="bacimg" src="https://www.yitingting.top/h5edu/smart/images/type/{{imgSrc[index] ? imgSrc[index] : 1}}.jpg" />
+            <text class="title">{{item.title}}</text>
+        </view>
+    </block>
+</view>

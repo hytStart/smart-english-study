@@ -1,0 +1,21 @@
+<!--pages/article/article.wxml-->
+<view class="body">
+    <text class="skill_title">{{pageArticle.title}}</text>
+    <text class='skill_author'>{{pageArticle.auth}}</text>
+    <view class="skill_content">
+        <block wx:for="{{pageArticle.content}}">  
+            <text class="skill_content_paragraph">
+                {{item.detail}}
+            </text>
+        </block>
+        <view style="margin-top:40rpx" wx:if="{{showState}}">
+            原文翻译
+        </view>
+        <block wx:for="{{pageArticle.explain}}">  
+            <text class="skill_content_paragraph">
+                {{item.detail}}
+            </text>
+        </block>
+    </view>
+</view>
+

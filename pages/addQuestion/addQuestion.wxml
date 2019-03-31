@@ -1,0 +1,7 @@
+<!--pages/addQuestion/addQuestion.wxml-->
+<view class="body">
+  <view class="question_guide">参与大家的讨论</view>
+  <input class="question_title" placeholder="请输入标题" bindinput="bindtitleinput"></input>
+  <textarea class="question_content" placeholder="请输入内容" bindinput="bindcontentinput"></textarea>
+  <button class='question_btn' bindtap='add'>提交问题</button>
+</view>

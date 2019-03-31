@@ -1,0 +1,12 @@
+<!--pages/grammar.wxml-->
+<view class="body">
+    <block wx:for="{{grammarData}}">
+        <view class="grammar_every">
+            <text class="grammar_every_title">{{item.title}}</text>
+            <view class="grammar_every_content">
+                {{item.content}}
+            </view>
+            <image class="grammar_every_delete" src="https://www.yitingting.top/h5edu/smart/images/grammar/delete.png" />
+        </view>
+    </block>
+</view>

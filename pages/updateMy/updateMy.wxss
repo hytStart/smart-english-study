@@ -1,0 +1,42 @@
+/* pages/updateMy/updateMy.wxss */
+.body{
+    width: 100%;
+}
+.title{
+    width: 100%;
+    text-align: center;
+    color: #395DB5;
+    font-size: 40rpx;
+    display: block;
+    margin-top: 20rpx;
+}
+.myimg{
+    display: block;
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    margin-left: 311rpx;
+    border-radius: 50%;
+}
+.myname_con{
+    width: 730rpx;
+    height: 100rpx;
+    border: 1px solid #395DB5;
+    margin: 0 auto;
+}
+.myname_con input{
+    text-indent: 20rpx;
+    width: 100%;
+    height: 100%;
+}
+.mypassword_con{
+    width: 730rpx;
+    height: 100rpx;
+    border: 1px solid #395DB5;
+    margin: 0 auto;
+}
+.mypassword_con input{
+    text-indent: 20rpx;
+    width: 100%;
+    height: 100%;
+}

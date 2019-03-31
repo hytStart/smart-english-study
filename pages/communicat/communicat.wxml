@@ -1,0 +1,40 @@
+<!--pages/communicat/communicat.wxml-->
+
+<!-- table选项卡 -->
+<view class="body">
+    <!-- nav bar -->
+  <view class="nav bc_white">
+    <view class="{{selected?'red':'default'}}" bindtap="selected">全部</view>
+    <view class="{{selected1?'red':'default'}}" bindtap="selected1">我的</view>
+  </view>
+    <!-- white block -->
+    <view class="white_block"></view>
+  <view class="{{selected?'show':'hidden'}}">
+
+    <block wx:for="{{allQuestion}}">
+        <view class="talk_item" bindtap="goQuestionCon" data-qid="{{item.qid}}">
+          <image class="talk_item_headimg" src="{{item.uimgurl}}"></image>
+          <text class="talk_item_username">{{item.uname}}</text>
+          <text class="talk_item_title">题目：{{item.qtitle}}</text>
+          <text class="talk_item_content">{{item.qcontent}}</text>
+        </view>
+    </block>
+  </view>
+
+  <view class="{{selected1?'show':'hidden'}}">
+      <block  wx-else wx:for="{{myQuestion}}">
+        <view class="talk_item" bindtap="goQuestionCon" data-qid="{{item.qid}}">
+          <image class="talk_item_headimg" src="{{item.uimgurl}}"></image>
+          <text class="talk_item_username">{{item.uname}}</text>
+          <text class="talk_item_title">题目：{{item.qtitle}}</text>
+          <text class="talk_item_content">{{item.qcontent}}</text>
+        </view>
+    </block>
+    <block  wx:if="{{!myQuestion}}">
+      <view  style='margin-top:60rpx'>暂无</view>
+    </block>
+  </view>
+
+  <!-- 发起bar  -->
+  <image class="fix_addQuestion" bindtap="goAddquestion" src="https://www.yitingting.top/h5edu/smart/images/communicateImg/addQuestion.png"></image>
+</view>

@@ -1,0 +1,23 @@
+/* pages/musicList/musicList.wxss */
+.body{
+    width: 720rpx;
+    margin: 20rpx auto;
+}
+.body_every{
+    width: 100%;
+    height: 200rpx;
+    border-radius: 40rpx;
+    background-color: #395DB5;
+    margin-top: 20rpx;
+}
+.every_img{
+    width:200rpx;
+    height:200rpx;
+    vertical-align: middle;
+    border-radius: 40rpx;
+}
+.every_title{
+    color: #fff;
+    font-size: 40rpx;
+    margin-left: 20rpx;
+}

@@ -1,0 +1,44 @@
+/* pages/lizhiwenzhang/lizhiwenzhang.wxss */
+.body{
+    width:720rpx;
+    margin:0 auto;
+}
+.lizhi_name{
+    margin-left:20rpx;
+    margin-top:10rpx;
+    color:#395DB5;
+}
+.lizhi_every{
+    width:94%;
+    height:300rpx;
+    box-shadow:0 0 5rpx #395DB5;
+    margin:0 auto;
+    margin-top:40rpx;
+    border-radius:30rpx;
+    position:relative;
+}
+.every_banner{
+    height:100%;
+    width:300rpx;
+    border-radius:30rpx;
+}
+.every_title{
+    font-size:30rpx;
+    position:absolute;
+    top:20rpx;
+    width:380rpx;
+    left:320rpx;
+}
+.every_like{
+    width:60rpx;
+    height:60rpx;
+    position:absolute;
+    left:400rpx;
+    bottom:30rpx;
+}
+.every_count{
+    position:absolute;
+    left:470rpx;
+    bottom:34rpx;
+    color:red;
+}

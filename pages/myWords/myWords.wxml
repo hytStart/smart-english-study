@@ -1,0 +1,20 @@
+<!--pages/myWords.wxml-->
+<!--pages/words/words.wxml-->
+<view class="body">
+  <view class="words_alltype">生词本</view>
+  <block wx-else wx:for="{{pageMywords}}" > 
+    <view class="words_every">
+       <text class="words_every_wenglish">{{item.Word}}</text>
+       <text class="words_every_wchinese">{{item.meaning}}</text>
+       <text class="words_every_wlx">
+          <text wx:if="{{item.lx}}">例句：</text>
+          {{item.lx}}
+       </text>
+       <image bindtap="delcollectWords" data-wid="{{item.ID}}" class="words_every_collection" src="https://www.yitingting.top/h5edu/smart/images/word_collect/collect_yes.png"></image> 
+    </view>
+  </block>
+  <block wx:if="{{!pageMywords}}" >
+    <view style='margin-top:60rpx'>暂无</view>
+  </block>
+</view>
+

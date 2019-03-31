@@ -1,0 +1,24 @@
+/* pages/grammar.wxss */
+.body{
+    width:720rpx;
+    margin:0 auto;
+}
+.grammar_every{
+    width:100%;
+    position:relative;
+    padding-top:20rpx;
+    border-bottom:2rpx solid #395DB5;
+}
+.grammar_every_content{
+    margin-top:10rpx;
+    font-size:30rpx;
+    text-indent:20rpx;
+    padding-bottom:20rpx;
+}
+.grammar_every_delete{
+    width:50rpx;
+    height:50rpx;
+    position:absolute;
+    top:10rpx;
+    right:16rpx;
+}

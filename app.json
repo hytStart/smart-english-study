@@ -1,0 +1,72 @@
+{
+  "pages": [
+    "pages/homePage/homePage",
+    "pages/compositionList/compositionList",
+    "pages/composition/composition",
+    "pages/translate/translate",
+    "pages/type/type",
+    "pages/videoList/videoList",
+    "pages/myWords/myWords",
+    "pages/my/my",
+    "pages/updateMy/updateMy",
+    "pages/musicList/musicList",
+    "pages/music/music",
+    "pages/grammar/grammar",
+    "pages/bind/bind",
+    "pages/login/login",
+    "pages/audioList/audioList",
+    "pages/videoDetail/videoDetail",
+    "pages/trainList/trainList",
+    "pages/audioDetail/audioDetail",
+    "pages/wordsList/wordsList",
+    "pages/train/train",
+    "pages/trainAnswer/trainAnswer",
+    "pages/myCommunicat/myCommunicat",
+    "pages/communicat/communicat",
+    "pages/questionCon/questionCon",
+    "pages/words/words",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/addQuestion/addQuestion",
+    "pages/lizhiwenzhang/lizhiwenzhang",
+    "pages/listenSkill/listenSkill",
+    "pages/article/article"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#395DB5",
+    "navigationBarTitleText": "Smart",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/homePage/homePage",
+        "text": "首页",
+        "iconPath": "images/toolbar/home.png",
+        "selectedIconPath": "images/toolbar/home@selected.png"
+      },
+      {
+        "pagePath": "pages/translate/translate",
+        "text": "翻译",
+        "iconPath": "images/toolbar/type.png",
+        "selectedIconPath": "images/toolbar/type@selected.png"
+      },
+      {
+        "pagePath": "pages/communicat/communicat",
+        "text": "广场",
+        "iconPath": "images/toolbar/communicat.png",
+        "selectedIconPath": "images/toolbar/communicat@selected.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我",
+        "iconPath": "images/toolbar/my.png",
+        "selectedIconPath": "images/toolbar/my@selected.png"
+      }
+    ],
+    "backgroundColor": "#F5F5F5",
+    "borderStyle": "black",
+    "selectedColor": "#395DB5"
+  }
+}

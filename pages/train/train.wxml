@@ -1,0 +1,24 @@
+<!--pages/train/train.wxml-->
+<view class="body">
+    <view class="train_timu">
+        {{trainData.title}}
+    </view>
+    <block wx:for="{{trainData.content}}">
+        <view class="train_artical">
+            {{item.artical}}
+        </view>
+        <block wx:for="{{item.homework}}">
+            <view class="train_every">
+            {{index+1}} {{item.question}}
+                <radio-group  bindchange="radioChange" data-tid="{{index}}">
+                    <label class="train_every_abcd" wx:for="{{item.option}}">
+                        <radio value="{{item.name}}" />{{item.name}} {{item.value}}
+                    </label>
+                </radio-group>
+            </view>
+        </block>
+    </block>
+    <view class="train_submit" bindtap="submit">
+        提交测试
+    </view>
+</view>

@@ -1,0 +1,103 @@
+/* pages/myCommunicat/myCommunicat.wxss */
+page{
+    background-color:#edf0f3;
+}
+.hyt_title{
+    color: #395DB5;
+    width: 100%;
+    text-align: center;
+    font-size: 40rpx;
+}
+.nav{
+    width:100%
+    ;height:100rpx;
+    display:flex;
+    flex-direction:row;
+    position: fixed;
+    top: 0;
+    z-index:999;
+    background-color: #fff;
+    color: #fff;
+}
+.default{
+    line-height:100rpx;
+    text-align:center;
+    flex:1;
+    border-right:1px solid gainsboro;
+    color:#000;
+    font-weight:bold;
+    font-size:28rpx;
+}
+.red{
+    line-height:100rpx;
+    text-align:center;
+    color:#fff;
+    flex:1;
+    border-right:1px solid gainsboro;
+    font-weight:bold;
+    font-size:28rpx;
+    background-color: #AE8759;
+}
+.show{
+    display:block;
+    text-align:center;
+}
+.hidden{
+    display:none;
+    text-align:center;
+}
+.white_block{
+    width:100%;
+    height:80rpx;
+}
+.talk_item{
+    width: 100%;
+    height: 200rpx;
+    margin-top: 22rpx;
+    position: relative;
+    background-color: #fff;
+
+}
+.talk_item_headimg{
+    position: absolute;
+    width: 200rpx;
+    height: 200rpx;
+    left: 10rpx;
+    top: 0;
+    border-radius: 10rpx;
+}
+.talk_item_username{
+    font-size: 28rpx;
+    position: absolute;
+    top: 10rpx;
+    left: 220rpx;
+}
+.talk_item_title{
+    font-size: 34rpx;
+    position: absolute;
+    left: 230rpx;
+    top: 60rpx;
+}
+.talk_item_content{
+    font-size: 26rpx;
+    position: absolute;
+    left: 210rpx;
+    top: 130rpx;
+    width: 68%;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.talk_item_answer{
+    font-size: 28rpx;
+    position: absolute;
+    right: 20rpx;
+    top: 12rpx;
+}
+.fix_addQuestion{
+    position: fixed;
+    bottom: 40rpx;
+    right: 20rpx;
+    width: 100rpx;
+    height: 100rpx;
+}

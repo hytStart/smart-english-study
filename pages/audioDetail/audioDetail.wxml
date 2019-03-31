@@ -1,0 +1,290 @@
+<!--pages/audioDetail.wxml-->
+<view class="body">
+    <view class="radio">
+        <audio class="body_audio" src="{{audioData.src}}" controls loop name="{{audioData.title}}" author="{{audioData.author}}">
+        </audio>
+    </view>
+
+    <!-- 空白block -->
+    <view class="body_audio_replace">
+        
+    </view>
+
+    <!-- 文章1 -->
+    <view class="body_article" wx:if="{{oneOrtwo}}">
+        <text class="article_title">{{audioData.title}}</text>
+        <text class="article_one_yaoqiu">
+            Section A
+            Directions: In this section, you will hear three news reports. At the end of each news report, you will hear two or three questions. Both the news report and the questions will be spoken only once. After you hear a question, you must choose the best answer from the four choices marked A), B), C) and D). Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.
+        </text>
+        <view class="article_question">
+            <text class="article_one_yaoqiu">
+                Questions 1 and 2 are based on the news report you have just heard.
+            </text>
+            <block wx:for="{{questionOne}}">
+                <view>
+                    {{item.question}}
+                </view>
+                <radio-group>
+                    <label class="train_every_abcd" wx:for="{{item.options}}">
+                        <radio value="{{item.name}}" />{{item.key}} {{item.value}}
+                    </label>
+                </radio-group>
+            </block>
+        </view>
+
+        <view class="line"></view>
+
+        <view class="article_question">
+            <text class="article_one_yaoqiu">
+                Questions 3 and 4 are based on the news report you have just heard.
+            </text>
+            <block wx:for="{{questionTwo}}">
+                <view>
+                    {{item.question}}
+                </view>
+                <radio-group>
+                    <label class="train_every_abcd" wx:for="{{item.options}}">
+                        <radio value="{{item.name}}" />{{item.key}} {{item.value}}
+                    </label>
+                </radio-group>
+            </block>
+        </view>
+
+        <view class="line"></view>
+
+        <view class="article_question">
+            <text class="article_one_yaoqiu">
+                Questions 5 to 7 are based on the news report you have just heard.
+            </text>
+            <block wx:for="{{questionThree}}">
+                <view>
+                    {{item.question}}
+                </view>
+                <radio-group>
+                    <label class="train_every_abcd" wx:for="{{item.options}}">
+                        <radio value="{{item.name}}" />{{item.key}} {{item.value}}
+                    </label>
+                </radio-group>
+            </block>
+        </view>
+
+        <text class="article_one_yaoqiu">
+            Section B
+            Directions: In this section, you will hear two long conversations. At the end of each conversation, you will hear four questions. Both the conversation and the questions will be spoken only once. After you hear a question, you must choose the best answer from the four choices marked A), B), C) and D). Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.
+        </text>
+
+        <view class="article_question">
+            <text class="article_one_yaoqiu">
+                Questions 8 to 11 are based on the conversation you have just heard.
+            </text>
+            <block wx:for="{{questionFour}}">
+                <view>
+                    {{item.question}}
+                </view>
+                <radio-group>
+                    <label class="train_every_abcd" wx:for="{{item.options}}">
+                        <radio value="{{item.name}}" />{{item.key}} {{item.value}}
+                    </label>
+                </radio-group>
+            </block>
+        </view>
+
+        <view class="line"></view>
+
+        <view class="article_question">
+            <text class="article_one_yaoqiu">
+                Questions 12 to 15 are based on the conversation you have just heard.
+            </text>
+            <block wx:for="{{questionFive}}">
+                <view>
+                    {{item.question}}
+                </view>
+                <radio-group>
+                    <label class="train_every_abcd" wx:for="{{item.options}}">
+                        <radio value="{{item.name}}" />{{item.key}} {{item.value}}
+                    </label>
+                </radio-group>
+            </block>
+        </view>
+        
+         <text class="article_one_yaoqiu">
+           Section C        
+           Directions: In this section, you will hear three passages. At the end of each passage, you will hear three or four questions. Both the passage and the questions will be spoken only once. After you hear a question, you must choose the best answer from the four choices marked A), B), C) and D). Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.
+        </text>
+
+        <view class="article_question">
+            <text class="article_one_yaoqiu">
+                Questions 16 to 18 are based on the conversation you have just heard.
+            </text>
+            <block wx:for="{{questionSix}}">
+                <view>
+                    {{item.question}}
+                </view>
+                <radio-group>
+                    <label class="train_every_abcd" wx:for="{{item.options}}">
+                        <radio value="{{item.name}}" />{{item.key}} {{item.value}}
+                    </label>
+                </radio-group>
+            </block>
+        </view>
+
+        <view class="line"></view>
+
+        <view class="article_question">
+            <text class="article_one_yaoqiu">
+                Questions 19 to 21 are based on the conversation you have just heard.
+            </text>
+            <block wx:for="{{questionSeven}}">
+                <view>
+                    {{item.question}}
+                </view>
+                <radio-group>
+                    <label class="train_every_abcd" wx:for="{{item.options}}">
+                        <radio value="{{item.name}}" />{{item.key}} {{item.value}}
+                    </label>
+                </radio-group>
+            </block>
+        </view>
+
+        <view class="line"></view>
+
+        <view class="article_question">
+            <text class="article_one_yaoqiu">
+                Questions 22 to 25 are based on the conversation you have just heard.
+            </text>
+            <block wx:for="{{questionEight}}">
+                <view>
+                    {{item.question}}
+                </view>
+                <radio-group>
+                    <label class="train_every_abcd" wx:for="{{item.options}}">
+                        <radio value="{{item.name}}" />{{item.key}} {{item.value}}
+                    </label>
+                </radio-group>
+            </block>
+        </view>
+
+    </view>
+
+    <view class="body_article" wx:else="{{oneOrtwo}}">
+        <text class="article_title">{{audioData.title}}</text>
+        <text class="article_one_yaoqiu">
+            Section A
+　　        Directions: In this section, you will bear 8 short conversations and 2 long conversations. At the end of each conversation, one or more questions will be asked about what was said. Both the conversation and the questions will be spoken only once. After each questions there will be a pause. During the pause, you must read the four choices marked A), B),C) and D), and decide which is the best answer. Then mark the corresponding letter on Answer sheet 1 with a single line through the center.
+        </text>
+        <view class="article_question">
+            <block wx:for="{{questionOne}}">
+                <view>
+                    {{item.question}}
+                </view>
+                <radio-group>
+                    <label class="train_every_abcd" wx:for="{{item.options}}">
+                        <radio value="{{item.name}}" />{{item.key}} {{item.value}}
+                    </label>
+                </radio-group>
+            </block>
+        </view>
+        <view class="line"></view>
+        <view class="article_question">
+            <text class="article_one_yaoqiu">
+                Questions 9 to 12 are based on the conversation you have just heard.
+            </text>
+            <block wx:for="{{questionTwo}}">
+                <view>
+                    {{item.question}}
+                </view>
+                <radio-group>
+                    <label class="train_every_abcd" wx:for="{{item.options}}">
+                        <radio value="{{item.name}}" />{{item.key}} {{item.value}}
+                    </label>
+                </radio-group>
+            </block>
+        </view>
+        <view class="line"></view>
+        <view class="article_question">
+            <text class="article_one_yaoqiu">
+                Questions 13 to 15 are based on the conversation you have just heard.
+            </text>
+            <block wx:for="{{questionThree}}">
+                <view>
+                    {{item.question}}
+                </view>
+                <radio-group>
+                    <label class="train_every_abcd" wx:for="{{item.options}}">
+                        <radio value="{{item.name}}" />{{item.key}} {{item.value}}
+                    </label>
+                </radio-group>
+            </block>
+        </view>
+        <view class="line"></view>
+        <text class="article_one_yaoqiu">
+            Section B
+　　        Directions: In this section, you will hear 3 short passages. At the end of each passage, you will hear some questions. Both the passage and the questions will be spoken only once. After you hear a question, you must choose the best answer from the four choices marketed A), B),C) and D). Then marked the correspond letter on Answer sheet I with a single line through the centre.
+        </text>
+        <view class="article_question">
+            <text class="article_one_yaoqiu">
+                Questions 16 to 18 are based on the conversation you have just heard.
+            </text>
+            <block wx:for="{{questionFour}}">
+                <view>
+                    {{item.question}}
+                </view>
+                <radio-group>
+                    <label class="train_every_abcd" wx:for="{{item.options}}">
+                        <radio value="{{item.name}}" />{{item.key}} {{item.value}}
+                    </label>
+                </radio-group>
+            </block>
+        </view>
+        <view class="line"></view>
+        <view class="article_question">
+            <text class="article_one_yaoqiu">
+                Questions 19 to 21 are based on the passage you have just heard.
+            </text>
+            <block wx:for="{{questionFive}}">
+                <view>
+                    {{item.question}}
+                </view>
+                <radio-group>
+                    <label class="train_every_abcd" wx:for="{{item.options}}">
+                        <radio value="{{item.name}}" />{{item.key}} {{item.value}}
+                    </label>
+                </radio-group>
+            </block>
+        </view>
+        <view class="line"></view>
+        <view class="article_question">
+            <text class="article_one_yaoqiu">
+                Questions 22 to 25 are based on the passage you have just heard.
+            </text>
+            <block wx:for="{{questionSix}}">
+                <view>
+                    {{item.question}}
+                </view>
+                <radio-group>
+                    <label class="train_every_abcd" wx:for="{{item.options}}">
+                        <radio value="{{item.name}}" />{{item.key}} {{item.value}}
+                    </label>
+                </radio-group>
+            </block>
+        </view>
+    </view>
+    
+
+    <view class="audio_answer" wx:if="{{condition}}">
+        <block wx:for="{{answer}}">
+            <text class="every_answer">{{index+1}}{{item}}</text>
+        </block>
+        <!-- <block wx:for="{{explain}}">
+            <view>
+                {{index+1}}
+                {{item}}
+            </view>
+        </block> -->
+        
+        <view class="white_bottom"></view>
+    </view> 
+    <image class="audio_shangla" src='https://www.yitingting.top/h5edu/smart/images/shangla.png' bindtap="showAnswer"></image>
+</view>
+

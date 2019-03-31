@@ -1,0 +1,35 @@
+/* pages/videoList/videlList.wxss */
+.body{
+    width: 720rpx;
+    margin: 0 auto;
+    
+}
+.body_allTitle{
+    width: 100%;
+    text-align: center;
+    color: #395DB5;
+    font-size: 48rpx;
+}
+.body_content{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap : wrap;
+}
+.body_every{
+    width: 320rpx;
+    height: 340rpx;
+    margin-top: 20rpx;
+    display: flex;
+    flex-wrap : wrap;
+    justify-content: center;
+    box-shadow: 2px 2px 3px #395DB5;
+}
+.every_img{
+  width: 280rpx;
+  height: 280rpx;
+}
+.every_title{
+  display: block;
+  color: #395DB5;
+}

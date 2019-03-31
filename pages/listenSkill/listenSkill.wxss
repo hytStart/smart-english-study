@@ -1,0 +1,23 @@
+/* pages/listenSkill/listenSkill.wxss */
+.body{
+    width:720rpx;
+    margin:0 auto;
+}
+.skill_title{
+    margin-top: 10rpx;
+    display: block;
+    width:100%;
+    text-align: center;
+}
+.skill_author{
+  position: relative;
+  left: 320rpx;
+  font-size: 28rpx;
+  color: #9f9f9f;
+}
+.skill_content{
+  margin-top: -20rpx;
+}
+.skill_content_paragraph{
+  font-size: 32rpx;
+}

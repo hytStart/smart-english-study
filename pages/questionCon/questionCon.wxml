@@ -1,0 +1,35 @@
+<!--pages/questionCon/questionCon.wxml-->
+<view class="body">
+  <!-- 问题 -->
+  <block wx:for="{{questionconData}}">
+    <view class="question_specific">
+      <image class="question_specific_img" src="{{item.uimgurl}}"></image>
+      <text class="question_specific_username">{{item.uname}}</text>
+      <text class="question_specific_title">题目：{{item.qtitle}}</text>
+      <text class="question_specific_content">{{item.qcontent}}</text>
+      <view class="question_specific_btn_answer" data-q_uid="{{item.q_uid}}" bindtap="showComment">评论</view>
+    </view>
+  </block>
+
+  <view class="question_answerTitle">全部评论</view>
+  <!-- 评论 -->
+  <block wx:for="{{answerData}}">
+    <view class="answer_specific">
+      <image class="answer_specific_img" src="{{item.uimgurl}}"></image>
+      <text class="answer_specific_username">{{item.uname}}</text>
+      <view class="answer_specific_answer">
+        {{item.ascontent}}
+      </view>
+    </view> 
+  </block>
+
+  <view class="{{commentState ? 'show' : 'hide'}}">
+    <view class="answer_mtk">
+      <text class="close" bindtap="clo">X</text>
+      <view class="answer_mtk_con">
+        <input class="answer_mtk_con_text" placeholder="请输入评论内容" bindinput="bindta" />
+        <button style="margin-top:0rpx;width:90%;" bindtap="addAnswer" class="weui-btn" type="primary" plain="true">提交评论</button>
+      </view>
+    </view>
+  </view>
+</view>

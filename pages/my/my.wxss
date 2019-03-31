@@ -1,0 +1,76 @@
+/* pages/my/my.wxss */
+/**index.wxss**/
+.container {
+  height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; */
+  padding: 20rpx 0;
+  box-sizing: border-box; 
+  background-color: #edf0f3;
+} 
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #395DB5;
+  font-size: 30rpx;
+}
+
+.userinfo-setting{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.personal{
+  width: 100%;
+}
+ .personal_every{
+  width: 100%;
+  height: 100rpx;
+  background-color: #fff;
+  margin-top: 10rpx;
+  line-height: 100rpx;
+} 
+
+.personal_every_logo{
+  width: 80rpx;
+  height: 80rpx;
+  float: left;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+}
+.personal_every_title{
+  margin-left: 10rpx;
+  font-size: 30rpx;
+}
+.personal_every_more{
+  width: 60rpx;
+  height: 60rpx;
+  float: right;
+  margin-right: 10rpx;
+  margin-top: 20rpx;
+}
+.login_out{
+  width: 400rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  background-color: #395DB5;
+  color: #fff;
+  margin: 0 auto;
+  border-radius: 20rpx;
+  margin-top: 200rpx;
+}

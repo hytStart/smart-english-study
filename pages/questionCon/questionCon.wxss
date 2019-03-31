@@ -1,0 +1,137 @@
+/* pages/questionCon/questionCon.wxss */
+.body{
+  width: 720rpx;
+  margin: 20rpx auto;
+}
+.question_specific{
+  position: relative;
+  min-height: 240rpx;
+  background-color: #edf0f3;
+}
+.question_specific_img{
+  position: absolute;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  top: 5rpx;
+  left: 5rpx;
+}
+.question_specific_username{
+  font-size: 28rpx;
+  position: absolute;
+  top: 10rpx;
+  left: 100rpx;
+}
+.question_specific_title{
+  font-size: 24rpx;
+  position: absolute;
+  top: 55rpx;
+  left: 100rpx;
+}
+.question_specific_content{
+  font-size: 28rpx;
+  position: absolute;
+  top: 96rpx;
+  left: 20rpx;
+  width: 90%;
+}
+.question_specific_btn_edit{
+  width: 80rpx;
+  height: 40rpx;
+  position: absolute;
+  font-size: 20rpx;
+  top: 10rpx;
+  right: 15rpx;
+  text-align: center;
+  line-height: 40rpx;
+  background-color: #395DB5;
+  border-radius: 20rpx;
+  color:#fff;
+}
+.question_specific_btn_answer{
+  width: 80rpx;
+  height: 40rpx;
+  position: absolute;
+  font-size: 20rpx;
+  bottom: 10rpx;
+  right: 15rpx;
+  text-align: center;
+  line-height: 40rpx;
+  background-color: #395DB5;
+  border-radius: 20rpx;
+  color:#fff;
+}
+.question_answerTitle{
+  width: 200rpx;
+  height: 50rpx;
+  border-bottom: 4rpx solid #395DB5;
+  margin-top: 20rpx;
+}
+.answer_specific{
+  margin-top: 40rpx;
+  width: 100%;
+  position: relative;
+  background-color: #edf0f3;
+  height: 100%;
+  padding-top: 10rpx;
+}
+.answer_specific_img{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  margin-left: 10rpx;
+}
+.answer_specific_username{
+  font-size: 28rpx;
+  top: 20rpx;
+  left: 100rpx;
+  display: inline-block;
+  position: absolute;
+}
+.answer_specific_answer{
+  font-size: 28rpx;
+  padding-left: 20rpx;
+  width: 90%;
+  padding-bottom: 20rpx;
+}
+
+.answer_mtk{
+  position: fixed;
+  background-color: rgba(0,0,0,.3);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.answer_mtk_con{
+  width: 600rpx;
+  height: 500rpx;
+  background-color: #ffffff;
+  border-radius: 40rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -300rpx;
+  margin-left: -300rpx;
+}
+.answer_mtk_con_text{
+  width: 100%;
+  height: 80%;
+  border-top-left-radius: 40rpx; 
+  border-top-right-radius: 40rpx; 
+  text-indent: 20rpx;
+}
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}
+.close{
+  position: absolute;
+  top:260rpx;
+  left:650rpx;
+  font-size:62rpx;
+  z-index: 1999;
+}
